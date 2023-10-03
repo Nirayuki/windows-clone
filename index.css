@@ -24,7 +24,40 @@ body{
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
 
+    gap: 5px;
+    user-select: none;
+    position: relative;
+}
+
+.menubar{
+    position: absolute;
+
+    display: none;
+
+    flex-direction: column;
+    width: 150px;
+
+    border-radius: 6px;
+    background-color: white;
+}
+
+.menuopen{
+    display: flex;
+}
+
+.item-menubar{
+    padding: 10px;
+
+    display: flex;
     gap: 10px;
+
+    color: black;
+
+    cursor: pointer;
+}
+
+.item-menubar:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .item{
